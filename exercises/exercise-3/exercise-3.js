@@ -6,3 +6,25 @@ let order = [
   { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.0 },
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
+
+// let [hotcakes, applepie, eggmcmuffin, sausage, hotcoffee, hasbrown] = order;
+// console.log(`${hotcakes.quantity} ${hotcakes.itemName} ${hotcakes.unitPrice}`);
+
+for(const {quantity: quan, itemName: item, unitPrice: price} of order){
+      console.log(`${quan} ${item} ${quan * price}`);
+}
+
+
+let sum = 0;
+for (const {quantity: quan, unitPrice: price} of order) {
+  let value = `${quan * price}`;
+  sum += value;
+}
+// caculate the sum without destructuring
+// order.forEach(element => {
+//   sum += (element.unitPrice * element.quantity);
+// });
+// order.forEach( ({quantity: quan, unitPrice: price}) => {
+//   sum += `${quan * price}`;
+//});
+console.log("Total: "+sum);
