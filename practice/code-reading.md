@@ -8,10 +8,10 @@ Take a look at the following code:
 1    let x = 1;
 2    function f1()
 3    {
-4        let x = 2;
+4        let x = 2; //local varible declaration
 5        console.log(x);
 6    }
-7    console.log(x);
+7    console.log(x); // print only global variable
 ```
 
 Explain why line 4 and line 6 output different numbers.
