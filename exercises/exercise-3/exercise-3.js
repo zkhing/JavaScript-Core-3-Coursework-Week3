@@ -19,7 +19,7 @@ for (const {quantity, unitPrice} of order) {
 }
  console.log("Total: " + sum);
 
- ///CYF SOLUTION
+ //CYF SOLUTION
 
 // function pad(value, width) {
 //   return value.toString().padEnd(width, " ");
