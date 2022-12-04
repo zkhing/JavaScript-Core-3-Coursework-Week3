@@ -77,9 +77,9 @@ for(const {firstName: f, lastName: l, house: h} of hogwarts){
     }
 }
 
-for(const {firstName: f, lastName: l, pet: p, occupation: o} of hogwarts){
-    if(o === "Teacher" && p !== null){
-      console.log(`${f} ${l}`);
+for(const {firstName, lastName, pet, occupation} of hogwarts){
+    if(occupation === "Teacher" && pet !== null){
+      console.log(`${firstName} ${lastName}`);
     }
 }
 
